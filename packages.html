@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Packages</title>
+    <link rel="stylesheet" href="packages.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Choose Your Gym Package</h1>
+        
+        <!-- Package Selection Form -->
+        <form id="package-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="package">Select Package:</label>
+            <select id="package" name="package" required>
+                <option value="">Select a package</option>
+                <option value="Monthly">Monthly Package</option>
+                <option value="Quarterly">Quarterly Package</option>
+                <option value="Half-Yearly">Half-Yearly Package</option>
+                <option value="Yearly">Yearly Package</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Selected Package List -->
+        <h2>Your Selected Packages</h2>
+        <ul id="selected-packages" class="selected-packages"></ul>
+    </div>
+
+    <script src="packages.js"></script>
+</body>
+</html>

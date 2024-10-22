@@ -1,0 +1,114 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Header */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Meal Plan Flexbox Layout */
+.meal-plan {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Meal Box Styling */
+.meal {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* On Hover Effects for Meal Boxes */
+.meal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Meal Header (Breakfast, Lunch, etc.) */
+.meal h2 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* List of Meals */
+.meal ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.meal ul li {
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+.meal ul li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons for Meal Plan */
+.meal button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button Hover Effects */
+.meal button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .meal-plan {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meal {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

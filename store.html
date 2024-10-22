@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management - Supplement Store</title>
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+    <div class="store-container">
+        <h1>Supplement Store</h1>
+        <div class="store-items">
+            <!-- Example Supplement Cards -->
+            <div class="item" onclick="showSupplementDetails('whey-protein')">
+                <img src="whey-protein.jpg" alt="Whey Protein">
+                <h2>Whey Protein</h2>
+                <button>See Benefits</button>
+            </div>
+
+            <div class="item" onclick="showSupplementDetails('creatine')">
+                <img src="creatine.jpg" alt="Creatine">
+                <h2>Creatine</h2>
+                <button>See Benefits</button>
+            </div>
+
+            <div class="item" onclick="showSupplementDetails('multivitamin')">
+                <img src="multivitamin.jpg" alt="Multivitamin">
+                <h2>Multivitamin</h2>
+                <button>See Benefits</button>
+            </div>
+
+            <div class="item" onclick="showSupplementDetails('bcaa')">
+                <img src="bcaa.jpg" alt="BCAA">
+                <h2>BCAA</h2>
+                <button>See Benefits</button>
+            </div>
+        </div>
+
+        <!-- Modal for Supplement Details -->
+        <div id="supplement-details" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDetails()">&times;</span>
+                <h2 id="supplement-title"></h2>
+                <p id="supplement-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="store.js"></script>
+</body>
+</html>

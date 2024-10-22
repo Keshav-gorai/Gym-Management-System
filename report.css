@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f7;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+/* Report Container */
+.report-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #34495e;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7f8c8d;
+}
+
+select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #ecf0f1;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    color: #34495e;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Table Styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.report-table th, .report-table td {
+    border: 1px solid #ecf0f1;
+    padding: 15px;
+    text-align: left;
+}
+
+.report-table th {
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.report-table td {
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-size: 16px;
+}
+
+.report-table tr:nth-child(even) {
+    background-color: #e1e7eb;
+}
+
+.report-table tr:hover {
+    background-color: #d1dfe6;
+    transition: background-color 0.3s ease;
+}
+
+.report-table td.status-completed {
+    color: #27ae60;
+    font-weight: 700;
+}
+
+.report-table td.status-pending {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label, select, button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .report-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    select {
+        width: 100%;
+    }
+}
